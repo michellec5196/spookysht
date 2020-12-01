@@ -104,13 +104,13 @@
               <div class="form-div">
               <form name="contact" class="gform" id="contact-form" method="POST" data-netlify="true">
                  <div class="input-div"><label for="name" class="label">Name:</label>
-                   <input type="text" class="form-input" id="name-input" placeholder="Casper"></div>
-                <div class="input-div"><label for="email" class="label">Email:</label>
+                   <input type="text" class="form-input" id="name-input" placeholder="Casper" name="name"></div>
+                <div class="input-div"><label for="email" class="label" name="email">Email:</label>
                 <input type="text" class="form-input" id="email-input" placeholder="casper@ghost.com"></div>
-                <div class="input-div"><label for="message" class="label">Message:</label>
+                <div class="input-div"><label for="message" class="label" name="message">Message:</label>
                   <textarea id="input-text-area" class="form-input" placeholder="Boo!"></textarea></div>
                 <div class="button-div">
-                  <input type="submit" class="button" value="Send" id="send-button"></input></div>
+                  <input type="submit" class="button" value="Send" id="send-button" name="submit"></input></div>
               </form>
               </div>
             </section> 
