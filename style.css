@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*APPLIES TO MULTIPLE SECTIONS*/
+
+body {
+  background: #0b0b0b;
+  font-family: Lato;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.section {
+  border-bottom: 1vh solid #1b1b1b;
+}
+
+h2 {
+  color: white;
+  font-size: 4.5vh;
+}
+
+.p {
+  color: #939da6;
+  word-spacing: 1px;
+  font-size: 3vh;
+  margin: 1vh;
+}
+
+.underline {
+  color: #f4b63f;
+  text-decoration: underline;
+  border-bottom: solid #a51112;
+}
+
+/*NAV BAR*/
+
+.ghost-logo {
+  float: left;
+  height: 4vh;
+  margin-bottom: 1vh;
+  padding-left: 3vw;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 1vw 1vw 0px 1vw;
+  font-size: 2vh;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  visibility: hidden;
+  transform: scaleX(0);
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #a51112;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/*WELCOME SECTION*/
+
+#section-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(https://images.unsplash.com/photo-1505635552518-3448ff116af3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  padding: 1vh 3vw;
+}
+
+h1 {
+  color: white;
+  font-size: 6vh;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 80vh;
+  border-top: 1px white solid;
+  margin: 3vw;
+}
+
+.new-ep-button {
+  color: white;
+  background: #a51112;
+  padding: 1.5vh;
+  border-radius: 10px;
+  width: 15vw;
+  box-shadow: 5px 5px 10px 5px black;
+  text-decoration: none;
+  margin: 3vh;
+}
+
+/*LISTEN HERE SECTION*/
+
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 6vh;
+}
+
+.listen-logo {
+  height: 30vh;
+  width: auto;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.listen-logo:hover {
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+}
+
+/*SOCIAL MEDIA SECTION*/
+
+#section-3 {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#social-media {
+  padding-top: 6vh;
+}
+
+.social-logo {
+  height: 20vh;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.social-logo:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+#space-under {
+  margin-bottom: 6vh;
+}
+
+.social-media-img {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  height: 40vh;
+  width: 50vw;
+}
+
+#twitter-link {
+  margin-top: 18vh;
+}
+
+/*CONTACT SECTION*/
+
+#section-4 {
+  height: 80vh;
+  border-bottom: none;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  margin: 6vh;
+}
+
+.gform {
+  display: flex;
+  flex-direction: column;
+  border: 10px solid #1b1b1b;
+  border-radius: 5px;
+  background: #1b1b1b;
+  height: 30vh;
+  width: 40vw;
+  justify-content: space-evenly;
+}
+
+.form-div {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  color: #f4b63f;
+}
+
+input {
+  width: 15vw;
+}
+
+.form-div {
+  text-align: center;
+}
+
+#input-text-area {
+  width: 25vw;
+  height: 5vw;
+}
+
+.button {
+  color: white;
+  background: #a51112;
+  border: 1px solid #a51112;
+  border-radius: 5px;
+  width: 15vw;
+  height: 3vh;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/*FOOTER SECTION*/
+
+#footer {
+  background: #1b1b1b;
+  margin: 0px;
+}
+
+#footer-p {
+  margin: 0px;
+  font-size: 2vh;
+}
+#footer-link {
+  color: #f4b63f;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 430px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+  .new-ep-button {
+    width: 100px;
+  }
+
+  .social-media-img {
+    transform: scale(0.9);
+  }
+
+  #contact-form {
+    width: 80vw;
+  }
+}
