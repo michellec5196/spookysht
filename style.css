@@ -116,6 +116,24 @@ h1 {
   box-shadow: 5px 5px 10px 5px black;
   text-decoration: none;
   margin: 3vh;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+}
+
+.new-ep-button:hover {
+  animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*LISTEN HERE SECTION*/
@@ -235,16 +253,20 @@ input {
 .button {
   color: white;
   background: #a51112;
-  border: 1px solid #a51112;
   border-radius: 5px;
+  border: black;
   width: 15vw;
   height: 3vh;
   text-decoration: none;
   text-align: center;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+  box-shadow: 5px 5px 10px 5px black;
 }
 
 .button:hover {
   cursor: pointer;
+  animation: pulse 1s ease-in-out;
 }
 
 /*FOOTER SECTION*/
