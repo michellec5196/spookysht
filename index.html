@@ -8,16 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
     <title>Spooky Sh*t</title>
   </head>
   <body>
@@ -102,16 +92,25 @@
                 <p class="p">Send a message here.</p>
               </div>
               <div class="form-div">
-              <form name="contact" class="gform" id="contact-form" method="POST" data-netlify="true">
-                 <div class="input-div"><label for="name" class="label">Name:</label>
-                   <input type="text" class="form-input" id="name-input" placeholder="Casper" name="name"></div>
-                <div class="input-div"><label for="email" class="label" name="email">Email:</label>
-                <input type="text" class="form-input" id="email-input" placeholder="casper@ghost.com"></div>
-                <div class="input-div"><label for="message" class="label" name="message">Message:</label>
-                  <textarea id="input-text-area" class="form-input" placeholder="Boo!"></textarea></div>
-                <div class="button-div">
-                  <input type="submit" class="button" value="Send" id="send-button" name="submit"></input></div>
-              </form>
+                <form name="contact" class="gform" id="contact-form" method="POST" data-netlify="true">
+                 <div class="input-div">
+                    <label for="name" class="label">Name:</label>
+                   <input type="text" class="form-input" id="name-input" placeholder="Casper" name="name">
+                  </div>
+                    <div class="input-div">
+                      <label for="email" class="label" name="email">Email:</label>
+                      <input type="text" class="form-input" id="email-input" placeholder="casper@ghost.com" name="email">
+                   </div>
+                     <div class="input-div">
+                        <label for="message" class="label">Message:</label>
+                        <textarea id="input-text-area" class="form-input" placeholder="Boo!" name="message">
+                        </textarea>
+                     </div>
+                        <div class="button-div">
+                          <input type="submit" class="button" value="Send" id="send-button" name="submit">
+                          </input>
+                        </div>
+                </form>
               </div>
             </section> 
             <footer id="footer">
